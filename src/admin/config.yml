@@ -3,7 +3,14 @@ backend:
   branch: main 
 media_folder: "public/assets/blog" # Media files will be stored in the repo under static/images/uploads
 public_folder: "/assets/blog"
-
+collections:
+ - name: "blog"
+   label: "Blog"
+   folder: "src/blog"
+   create: true
+   slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+   fields:
+      - {label: "Title", name: "title", widget: "string"}
 
       
       
