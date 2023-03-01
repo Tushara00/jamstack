@@ -6,7 +6,7 @@ module.exports = (eleventyConfig) => {
   // Copy static assets to output directory
   eleventyConfig.addPassthroughCopy("./src/style.css");
   eleventyConfig.addPassthroughCopy("./src/assets");
-
+  eleventyConfig.addPassthroughCopy("./src/admin");
   // Format post date for display
   eleventyConfig.addFilter("postDate", (dateObj) => {
     return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED);
