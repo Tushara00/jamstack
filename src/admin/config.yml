@@ -2,7 +2,7 @@ backend:
   name: git-gateway
   branch: main 
   media_folder: "public/assets/blog"
-public_folder: "blog"
+public_library: name: "blog"
 collections:
   - name: "blog" # Used in routes, e.g., /admin/collections/blog
     label: "Blog" # Used in the UI
